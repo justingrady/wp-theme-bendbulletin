@@ -8,7 +8,7 @@ This template is used to mimic the look and feel of the main BendBulletin.com we
 
 ##### Separate statics server for Bootstrap3
 
-This theme is a Bootstrap 3 markup sites.  BS3 files are stored on a separate statics server.  The BS3 CSS and Javascript are compiled using the CodeKit app for Mac.  With the CSS, it is SASS compiled with CodeKit.
+This theme is a Bootstrap 3 markup site.  BS3 files are stored on a separate statics server.  The BS3 CSS and Javascript are compiled using the CodeKit app for Mac.  With the CSS, it is SASS compiled with CodeKit.
 
 ##### Markup and CSS
 
