@@ -1,0 +1,961 @@
+/*
+Theme Name: Bulletin wrapper
+Theme URI: http://bendbulletin.com/
+Description: Theme to minic main Bendbulletin.com website.
+Version: 1.0
+Author: Justin Grady
+Author URI: http://www.justingrady.com/
+Tags: Bootstrap3, BS3, SASS css
+date: 4/26/2015
+updated: 04/26/2015
+*/
+
+@import url(http://statics.bendbulletin.com/css/screen.css);
+@import url(./freqnav.css);
+
+p.pubDate {
+	font-weight: bold;
+	border-bottom: 1px dotted #666;
+	padding: 0 0 0.5em 0;
+}
+
+.thread-alt {
+	background-color: #666666;
+}
+
+.bypostauthor {
+	background-color: #870e06;
+}
+
+.thread-even {
+}
+
+.depth-1 {
+	border-bottom: 1px dotted #ECECEC;
+}
+
+.commentlist li, #commentform input, #commentform textarea {
+	font: 0.9em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+.commentlist li {
+	font-weight: bold;
+}
+
+.commentlist li .avatar {
+	float: right;
+	border: 1px solid #EEEEEE;
+	padding: 0.1em;
+}
+
+.commentlist cite, .commentlist cite a {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 1.1em;
+}
+
+.commentlist p {
+	font-weight: normal;
+	line-height: 1.5em;
+	text-transform: none;
+}
+
+.commentmetadata {
+	font-weight: normal;
+}
+
+.post, .archiveList {
+        margin: 0.5em 00;
+        padding: 0 1em 1em 1em;
+	border: 0.5em solid #000000;
+        background-color: #ececec;
+	border-radius: 0.75em;
+	color: #000000;
+}
+
+div.bodyContentSub .post h2, div.bodyContentSub .archiveList h2 {
+	margin: 0;
+}
+
+div.bodyContentSub label {
+	color: #FFFFFF;
+}
+	
+.bodyContentSub .post div.content, .bodyContentSub .archiveList div.content {
+	margin: 0;
+	background-color: #FFFFFF;
+	padding: 0.125em 1em 0.5em 1em;
+	color: #000000;
+}
+
+	
+.bodyContentSub .post ul, .bodyContentSub .archiveList ul {
+	line-height: 1.5em;
+	margin: 1em 0 0 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.bodyContentSub .post ul li, .bodyContentSub .archiveList ul li {
+	margin-bottom: 0.5em;
+	background-position: 0 0.15em;
+	background-repeat: no-repeat;
+	padding-left: 1.5em;
+}
+
+	
+		
+.bodyContentSub .post a:link, .bodyContentSub .archiveList a:link {
+	color: #035Cb6 !important;
+	text-decoration: none;
+}
+
+.bodyContentSub .post a:visited, .bodyContentSub .archiveList a:visited {
+	color: #072D44 !important;
+	text-decoration: none;
+}
+
+.bodyContentSub .post a:hover, .bodyContentSub .archiveList a:hover {
+	text-decoration: underline;
+}
+
+.bodyContentSub .post a:active, .bodyContentSub .archiveList a:active {
+	color: #333399;
+}
+
+div.bodyContentSub .postmetadata {
+	padding-top: 5px;
+}
+
+.bodyContentSub .postmetadata {
+	margin: 5em 0 0 0;
+}
+
+.bodyContentSub .smallattachment {
+	text-align: center;
+	float: left;
+	width: 128px;
+	margin: 5px 5px 5px 0px;
+}
+
+.bodyContentSub .attachment {
+	text-align: center;
+	margin: 5px 0px;
+}
+
+.postmetadata {
+	clear: both;
+}
+
+p img {
+	padding: 0;
+	max-width: 100%;
+}
+
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+}
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+#sidebar {
+}
+
+#sidebar h2 {
+	font-size: 1.2em;
+}
+
+h2.widgettitle {
+	margin: 0 0 0.5em 0;
+}
+
+h2.pagetitle {
+	color: #FFFFFF;
+}
+	
+#sidebar ul {
+	padding: 0 0 0 0.5em;
+}
+	
+#goContainer ul li {
+}
+
+#sidebar div.widget {
+	background-color: #000000;
+	border-radius: 0.75em;
+	margin:  1em 0;
+	color: #ffffff;
+	padding: 0.5em;
+}
+
+#sidebar div.widget ul li {
+	background-image: none !important;
+}
+
+#sidebar div.sideSearch {
+	margin: 0 0 1em 0;
+}
+
+#sidebar div.musicEvents ul li {
+	background-image: none !important;
+	border-bottom: 1px dotted #ffffff;
+    margin: 1em 0;
+    padding: 0 0 1em 0;
+}
+
+#sidebar div.musicEvents ul li strong {
+	color: #ff3300;
+}
+	
+.postmetadata ul, .postmetadata li {
+	display: inline;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+#sidebar ul, #sidebar ul ol {
+}
+
+#sidebar ul li {
+	/* list-style-type: none;
+	list-style-image: none;
+	margin-bottom: 0.5em; */
+}
+
+#sidebar ul p, #sidebar ul select {
+	margin: 5px 0 8px;
+}
+
+#sidebar ul ul, #sidebar ul ol {
+	margin: 5px 0 0 10px;
+}
+
+#sidebar ul ul ul, #sidebar ul ol {
+	margin: 0 0 0 10px;
+}
+
+ol li, #sidebar ul ol li {
+	list-style: decimal outside;
+}
+
+#sidebar ul ul li, #sidebar ul ol li {
+}
+
+
+
+#searchform {
+	margin: 10px auto;
+	padding: 5px 3px;
+	text-align: center;
+}
+
+#sidebar #searchform #s {
+	width: 108px;
+	padding: 2px;
+}
+
+#sidebar #searchsubmit {
+	padding: 1px;
+}
+
+select {
+	width: 130px;
+}
+
+#commentform input {
+	width: 170px;
+	padding: 2px;
+	margin: 5px 5px 1px 0;
+}
+
+#commentform {
+	margin: 5px 10px 0 0;
+}
+
+#commentform textarea {
+	width: 100%;
+	padding: 2px;
+}
+
+#respond:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#commentform #submit {
+	margin: 0 0 5px auto;
+	float: right;
+}
+
+
+
+.alt {
+	margin: 0;
+	padding: 10px;
+}
+
+.commentlist {
+	padding: 0; 
+}
+
+.commentlist li {
+	margin: 15px 0 10px;
+	padding: 5px 5px 10px 10px;
+	list-style: none;
+}
+
+.commentlist li ul li {
+	margin-right: -5px;
+	margin-left: 10px;
+}
+
+.commentlist p {
+	margin: 10px 5px 10px 0;
+}
+
+.children {
+	padding: 0;
+}
+
+#commentform p {
+	margin: 5px 0;
+}
+
+.nocomments {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.commentmetadata {
+	margin: 0;
+	display: block;
+}
+
+#sidebar form {
+	margin: 0;
+}
+
+acronym, abbr, span.caps {
+	cursor: help;
+}
+
+acronym, abbr {
+	border-bottom: 1px dashed #999999;
+}
+
+blockquote {
+	margin: 15px 30px 0 10px;
+	padding-left: 20px;
+	border-left: 5px solid #DDDDDD;
+}
+
+blockquote cite {
+	margin: 5px 0 0;
+	display: block;
+}
+
+.center {
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+hr {
+	display: none;
+}
+
+a img {
+	border: none;
+}
+
+.navigation {
+	display: block;
+	text-align: center;
+	margin: 1em 0;
+}
+
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption {
+	border: 1px solid #DDDDDD;
+	text-align: center;
+	background-color: #F3F3F3;
+	padding-top: 4px;
+	margin: 10px; 
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+
+
+div#bodyContent div#page div#footer {
+	clear: both;
+	margin: 0 auto;
+	color: #FFFFFF;
+}
+
+div#get_recent_comments_wrap div {
+	font-size: 0.8em;
+	border-left: 1px solid #ececec;
+	padding: 0 0 0 0.5em;
+	margin: 0.5em 0 0 0;
+}
+
+div#get_recent_comments_wrap li {
+	border-bottom: 1px dotted #ececec;
+	margin: 0.5em 0;
+	padding: 0.5em 0;
+}
+
+.widget {
+	background-color: #FFA500;
+	margin: 1em 0 !important;
+}
+
+
+div.print_newtagcloud {
+	
+}
+
+div.widget_tag_cloud a {
+	margin: 0.5em 1.5em 1em 0;
+}
+
+
+div.print_newtagcloud h2 {
+	margin: 0 0 0.5em 0;
+}
+
+
+div.widget_rss span.rss-date {
+	font-size: 0.8em;
+	border-left: 1px solid #9F9811;
+	padding: 0 0 0 0.33em;
+	color: #9F9811;
+}
+
+div#flickr_badge_uber_wrapper {
+}
+
+div#flickr_badge_uber_wrapper img {
+	border: 1px solid #CCCCCC;
+	float: left;
+	margin: 1em;
+}
+
+div#flickr_badge_uber_wrapper div#flickr_badge_source {
+	clear: both;
+	padding: 0.5em 0 0 0;
+}
+
+div#sidebar div.socialNet {
+	margin: 0 0 1em 0;
+	border: 0.5em solid #000000;
+	background-color: #FFFFFF;
+	border-radius: 0.75em;
+}
+
+div#sidebar div.socialNet div.fcb_likeBox {
+        float: left;
+	margin: 1em 0.25em 1em 0;
+	border-right: 1px dotted #cccccc;
+	width: 190px;
+	height: 70px;
+}
+	
+div#sidebar div.socialNet ul {
+	list-style-image: none;
+	list-style-type: none;
+	float: right;
+	margin: 2.5em 0.25em 0 0;
+}
+
+									
+div#sidebar div.socialNet ul li {
+	margin: 0 0.125em;
+	padding: 0 !important;
+	float: left;
+	text-align: center;
+	background-image: none !important;
+	font-size: 3em;
+	line-height: 0;
+}
+
+div#sidebar div.socialNet ul li.soc_twt a {
+	color: #00aced;
+}
+
+div#sidebar div.socialNet ul li.soc_fcb a {
+	color: #3b5998;
+}
+
+div#sidebar div.socialNet ul li.soc_rss a {
+	color: #ff6600;
+}
+
+div#sidebar div.socialNet ul li.soc_pod a {
+}
+
+div#sidebar div.socialNet ul li.soc_yt a {
+	color: #bb0000;
+}
+
+																						
+						
+div#sidebar div.socialNet ul li a p {
+	margin: 0;
+}
+
+						
+div#sidebar div.socialNet h4.title {
+	float: none;
+	color: #666666;
+}
+						
+div#sidebar div.socialNet h5 {
+	float: left;
+	width: 50%;
+	border-top: 1px dotted #CCCCCC;
+	padding: 0.25em 0 0 0;
+	text-align: center;
+}
+
+
+.admin_portal_header {
+	clear: both;
+	width: 80%;
+}
+
+.admin_portal_links {
+	float: left;
+	margin: 10px;
+}
+
+.admin_portal_body {
+	float: left;
+	width: 80%;
+}
+
+.admin_portal_footer {
+	clear: both;
+}
+
+.comment_message_container {
+	float: left;
+	vertical-align: top;
+}
+
+.comment_message_title {
+	font-size: 1.2em;
+	float: left;
+	margin-bottom: 12px;
+}
+
+.comment_message_title_name {
+	color: #800E06;
+}
+
+.comment_message_body p {
+	clear: both;
+	font-size: 1.1em;
+	text-indent: 16px;
+}
+
+.comment_admin_container, .user_admin_container {
+	border: thin solid #000000;
+	background-color: #E8E8E8;
+	width: 50%;
+	margin: 10px;
+	padding: 15px;
+}
+
+.comment_admin_username, .user_admin_username {
+	font-weight: bold;
+	color: #00008B;
+	padding: 10px;
+}
+
+#comment_admin_message {
+	margin: 10px 0px 10px 10px;
+}
+
+.comment_admin_timestamp {
+	font-size: .8em;
+	padding-left: 10px;
+}
+
+.user_admin_roles {
+	font-size: .8em;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+.comment_admin_actions, .user_admin_actions {
+	font-size: .8em;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.comment_container {
+	border-top: 1px solid #DADADA;
+}
+
+.comment_section_avatar {
+	float: left;
+	margin: 0;
+	width: 20%;
+}
+
+.comment_section_container {
+	float: left;
+	width: 80%;
+	margin: 0;
+}
+
+.comment_section_avatar_text {
+	clear: both;
+	color: #858585;
+	font-size: .8em;
+	margin: 6px 0px 6px 0px;
+}
+
+.comment_section_vote_container {
+	clear: both;
+	width: 190px;
+	margin: -1 0 0 auto;
+}
+
+.comment_section_vote {
+	border: 1px solid #DFDFDF;
+}
+
+.comment_section_vote_label {
+	float: left;
+	background-color: #D7D7D7;
+	font-size: 1.0em;
+	font-weight: bold;
+	color: #3F3F3F;
+	padding: 6px 5px 6px 5px;
+	vertical-align: middle;
+}
+
+.comment_footer a {
+	float: right;
+	font-size: 0.9em;
+	color: #094366;
+	font-weight: bold;
+	vertical-align: middle;
+	margin: auto 2 auto 2;
+	text-decoration: none;
+}
+
+.comment_footer_pending {
+	float: right;
+	font-size: 0.7em;
+	color: #758585;
+	margin-right: 20px;
+	margin-top: 4px;
+}
+
+.comment_footer span {
+	float: right;
+	font-size: 0.9em;
+	color: #900E06;
+	font-weight: bold;
+	vertical-align: middle;
+	margin: auto 2 auto 2;
+	text-decoration: none;
+}
+
+.comment_footer_separator {
+	float: right;
+	font-size: 1.1em;
+	color: #858585;
+	font-weight: bold;
+	vertical-align: middle;
+	margin: auto 2 auto 2;
+	text-decoration: none;
+}
+
+.comment_bottom {
+	margin-bottom: 8px;
+	clear: both;
+}
+
+.comment_full_bottom {
+	clear: both;
+	border-top: 1px solid #DFDFDF;
+	margin-bottom: 12px;
+}
+
+.comment_summary {
+	clear: both;
+	padding: 0.25em 0;
+	margin: 0.25em 0 0 0;
+	font-size: 0.8em;
+	font-family: verdana;
+	color: #333333;
+}
+
+.comment_summary_left {
+	float: left;
+	padding: 0 0.5em 0 0;
+	margin: 0 0.5em 0 0;
+	border-right: 1px solid #CCCCCC;
+	width: auto;
+}
+
+.comment_summary_right {
+	float: left;
+	width: auto;
+}
+
+.comment_form_title {
+	color: #3F3F3F;
+	font-size: 1.5em;
+	font-weight: bold;
+	float: left;
+	width: auto;
+	margin: 12px 6px 6px 24px;
+}
+
+.comment_form_user_action {
+	float: right;
+	width: auto;
+	margin: 6px 24px 6px 6px;
+}
+
+.comment_form_user_action span {
+	color: #800E06;
+}
+
+.comment_form_action_title {
+	color: #6C6C6C;
+	font-size: 1.1em;
+	margin: 6px;
+}
+
+.comment_form_label {
+	float: left;
+	color: #3F3F3F;
+	font-size: 1.0em;
+	font-weight: bold;
+	margin: 3%;
+}
+
+.comment_form_label span {
+	float: left;
+	margin-bottom: 8px;
+	margin-right: 8px;
+}
+
+.comment_form_label span select {
+	float: left;
+	margin-bottom: 8px;
+	margin-left: 8px;
+}
+
+.comment_form_message {
+	clear: both;
+	width: 94%;
+	height: 200px;
+	margin: 0 3% 0 3%;
+}
+
+.comment_form_footer {
+	width: 94%;
+	margin: 10px 3% 0 3%;
+}
+
+.comment_form_pending {
+	float: right;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #870E06;
+	margin-right: 8px;
+	margin-top: 8px;
+}
+
+.comment_form_submit {
+	float: right;
+	margin: 12px auto auto 3%;
+}
+
+.comment_form_close {
+	float: right;
+	margin-right: 8px;
+}
+
+
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clearBoth {
+	clear: both;
+}
+
+.white_rule {
+	height: 10px;
+}
+
+
+.clearfix:before,                                                                                                                                            
+.clearfix:after,                                                                                                                                             
+.row:before,                                                                                                                                                 
+.row:after {
+	content: " ";
+	display: table;                                                                                                                                      
+}                                                                                                                                                            
+.clearfix:after,                                                                                                                                             
+.row:after {                                                                                                                                                 
+	clear: both;                                                                                                                                         
+}                                                                                                                                                            
+                                                                                                                                                     
+.clearfix,                                                                                                                                                   
+.row {                                                                                                                                                       
+	*zoom: 1;                                                                                                                                            
+}               
+
+
+/* ==========================================================================
+Social Connect
+========================================================================== */
+
+/* .social h3,
+.featured-wrap .social h3,
+section.articles .social h3 {
+	font-family: Oswald;
+	font-size: 15px;
+	font-weight: 700;
+	margin-bottom: 12px;
+	line-height: 24px;
+}
+*/
+
+.social ul {
+	margin: 0 0 20px;
+}
+.social li {
+	margin: 0 0 0 10px;
+}
+.social li:first-child {
+	margin: 0;
+}
+.social a.ss-icon {
+	color: #fff;
+	font-size: 20px;
+	line-height: 37px;
+	text-align: center;
+	display: block;
+	border-radius: 3px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	width: 32px;
+	height: 32px;
+}
+.social a.facebook {
+	font-size: 24px;
+	background: #2591ff;
+	line-height: 39px;
+	text-indent: 1px;
+	/* font-size: 26px;
+	line-height: 44px;
+	text-indent: 6px;
+	color: #FFFFFF;
+	background: #2591ff; */
+}
+.social a.twitter {
+	background: #25ceff;
+}
+.social a.pinterest {
+	font-size: 21px;
+	line-height: 39px;
+	background: #f03131;
+}
+.social a.youtube {
+	background: #a80202;
+}
+.social a.rss {
+	background: #ef843d;
+}
+.social a.googleplus {
+	background: #edb700;
+}
+
+/***** Hover States *****/
+.social a.facebook:hover {
+	background-color: #61afff;
+}
+.social a.twitter:hover {
+.social a.pinterest:hover {
+	background-color: #ff5f5f;
+}
+.social a.youtube:hover {
+	background-color: #c73131;
+}
+.social a.rss:hover {
+	background-color: #f39c63;
+}
+.social a.googleplus:hover {
+	background-color: #f8ca30;
+}
+
+div.topBar {
+	background-color: #000000;
+}
+
+div.topBar header#container.bbfreqHeader {
+	background-color: #000000;
+	border: none;
+	padding: 1em 0;
+}

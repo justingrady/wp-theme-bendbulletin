@@ -1,0 +1,78 @@
+
+#specPageNav {
+	margin: 0;
+	background-color: #333333;
+	-moz-border-radius: 0.75em;
+	-webkit-border-radius: 0.75em;
+	border-radius: 0.75em;
+	border: 0.5em solid #000000;
+	padding: 0.5em;
+	/* background: url('images/freq-logo_back.jpg') bottom left no-repeat #000000; */
+}
+
+#specPageNav h1 {
+	text-indent: -1000em;
+	display: block;
+	width: 16.5em;
+	margin: 0;
+	padding: 0;
+	float: left;
+	background: url('images/freq-logo_title.png') 0 0 no-repeat;
+}
+
+#specPageNav h1 a {
+	text-indent: -1000em;
+	display: block;
+	height: 1.9em;
+}
+
+#specPageNav p {
+	float: right;
+	color: #FFFFFF;
+	width: 11em;
+	margin: 1.5em 0 0 0;
+	font-variant: small-caps;
+	font-size: 1.4em !important;
+	line-height: 1em;
+}
+
+#specPageNav ul.topNavigation {
+	list-style-type: none;
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+
+#specPageNav ul.topNavigation a {
+	color: #FFFFFF;
+}
+
+
+#specPageNav ul.topNavigation li {
+        float: left;
+        text-align: center;
+        background-image: none !important;
+}
+
+#specPageNav ul.topNavigation li:first-child a {
+	padding-left: 0;
+}
+
+#specPageNav ul.topNavigation li a {
+        text-decoration: none;
+        padding: 0.25em 1.5em;
+        display: block;
+        color: #FFFFFF;
+        background: url(images/nav-pipe.gif) no-repeat right;
+        font-weight: bold;
+}
+
+#specPageNav ul.topNavigation li a:hover {
+        cursor: pointer;
+        cursor: hand;
+        text-decoration: underline;
+}
+
+
+
+
